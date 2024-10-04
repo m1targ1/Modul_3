@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mod_3"
         mc:Ignorable="d"
-        Title="Notification" Height="450" Width="800">
+        Title="Notification" Height="150" Width="420" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Button x:Name="input" Content="Уведомление" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="370" Height="45" Click="input_Click"/>
+        <TextBox x:Name="text_input" HorizontalAlignment="Center" Margin="0,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Height="20"/>
+        <Label Content="Введите строку, целое или дробное число" HorizontalAlignment="Left" Margin="25,60,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

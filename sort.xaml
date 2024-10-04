@@ -3,10 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Mod_3"
         mc:Ignorable="d"
-        Title="sort" Height="450" Width="800">
-    <Grid>
-        
+        Title="Sorting Application" Height="400" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <StackPanel>
+            <!-- Ввод данных вручную -->
+            <TextBlock Text="Введите числа через запятую:"/>
+            <TextBox Name="InputTextBox" Height="30" Margin="0,5"/>
+
+            <!-- Поле для количества чисел при рандомном заполнении -->
+            <TextBlock Text="Количество случайных чисел:"/>
+            <TextBox Name="RandomCountTextBox" Height="30" Margin="0,5"/>
+
+            <!-- Кнопка для рандомного заполнения -->
+            <Button Content="Заполнить случайными числами" Click="RandomButton_Click" Height="30" Margin="0,5"/>
+
+            <!-- Выбор метода сортировки -->
+            <TextBlock Text="Выберите метод сортировки:"/>
+            <ComboBox Name="SortMethodComboBox" Height="30" Margin="0,5">
+                <ComboBoxItem Content="1. Сортировка пузырьком"/>
+                <ComboBoxItem Content="2. Сортировка расчёской"/>
+                <ComboBoxItem Content="3. Шейкерная сортировка"/>
+                <ComboBoxItem Content="4. Сортировка подсчётом"/>
+                <ComboBoxItem Content="5. Глупая сортировка"/>
+            </ComboBox>
+
+            <!-- Кнопка сортировки -->
+            <Button Content="Сортировать" Click="SortButton_Click" Height="30" Margin="0,5"/>
+
+            <!-- Поле для вывода отсортированных данных -->
+            <TextBlock Text="Отсортированные данные:"/>
+            <TextBox Name="SortedTextBox" Height="30" Margin="0,5" IsReadOnly="True"/>
+        </StackPanel>
     </Grid>
 </Window>
