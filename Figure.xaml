@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Figure" Height="250" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid HorizontalAlignment="Right" Width="800">
+        Title="Figure" Height="270" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20,20,20,20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
@@ -16,17 +16,14 @@
             <RadioButton x:Name="Triangle" Content="Треугольник" Height="40" Checked="RadioButton_Checked"/>
         </StackPanel>
 
-        <!-- Поля для круга -->
         <TextBox x:Name="radius" TextWrapping="Wrap" Margin="303,80,377,336" IsEnabled="False"/>
         <Label Content="Радиус" HorizontalAlignment="Left" Margin="303,57,0,0" VerticalAlignment="Top"/>
 
-        <!-- Поля для прямоугольника -->
         <TextBox x:Name="width" HorizontalAlignment="Left" Margin="303,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <TextBox x:Name="length" HorizontalAlignment="Left" Margin="428,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <Label Content="Ширина" HorizontalAlignment="Left" Margin="303,95,0,0" VerticalAlignment="Top"/>
         <Label Content="Длина" HorizontalAlignment="Left" Margin="428,95,0,0" VerticalAlignment="Top"/>
 
-        <!-- Поля для треугольника -->
         <TextBox x:Name="tria1" HorizontalAlignment="Left" Margin="303,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <TextBox x:Name="tria2" HorizontalAlignment="Left" Margin="428,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <TextBox x:Name="tria3" HorizontalAlignment="Left" Margin="553,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
